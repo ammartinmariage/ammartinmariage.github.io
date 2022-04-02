@@ -196,7 +196,7 @@ $(document).ready(function () {
         e.preventDefault();
         var data = $(this).serialize();
 
-        $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
+        $('#alert-wrapper').html(alert_markup('info', '<strong>Patientez... </strong>.'));
 
             $.get('https://script.google.com/macros/s/AKfycbx6_Bz8e2dk7wDQaEoiwHiIAREcJKspcTyuy-8RDv8hhW070TLDJJu2CqSHiU7gc58/exec', data)
                 .done(function (data) {
