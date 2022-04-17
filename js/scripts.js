@@ -206,6 +206,8 @@ $(document).ready(function () {
                     } else {
                         $('#alert-wrapper').html('');
                         $('#rsvp-modal').modal('show');
+                        $('#alert-wrapper').html(alert_markup('success', '<strong>Vous êtes enregistrés ! </strong>.'));
+                        
                     }
                 })
                 .fail(function (data) {
